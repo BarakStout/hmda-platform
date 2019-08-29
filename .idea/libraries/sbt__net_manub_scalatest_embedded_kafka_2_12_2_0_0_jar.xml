@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: net.manub:scalatest-embedded-kafka_2.12:2.0.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.manub/scalatest-embedded-kafka_2.12/jars/scalatest-embedded-kafka_2.12-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.manub/scalatest-embedded-kafka_2.12/srcs/scalatest-embedded-kafka_2.12-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

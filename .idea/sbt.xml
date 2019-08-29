@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="customVMPath" />
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/census-api" />
+            <option value="$PROJECT_DIR$/check-digit" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/data-browser" />
+            <option value="$PROJECT_DIR$/hmda" />
+            <option value="$PROJECT_DIR$/hmda-analytics" />
+            <option value="$PROJECT_DIR$/hmda-regulator" />
+            <option value="$PROJECT_DIR$/hmda-reporting" />
+            <option value="$PROJECT_DIR$/hmda-spark-reporting" />
+            <option value="$PROJECT_DIR$/institutions-api" />
+            <option value="$PROJECT_DIR$/irs-publisher" />
+            <option value="$PROJECT_DIR$/modified-lar" />
+            <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/protocol" />
+            <option value="$PROJECT_DIR$/rate-limit" />
+            <option value="$PROJECT_DIR$/ratespread-calculator" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.2.8" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>

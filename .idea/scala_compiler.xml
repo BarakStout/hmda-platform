@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="sbt 1" modules="hmda-platform_6863" />
+    <profile name="sbt 2" modules="census-api,check-digit,common,data-browser,hmda-analytics,hmda-platform,hmda-protocol,hmda-regulator,hmda-reporting,hmda-root,hmda-spark-reporting,institutions-api,irs-publisher,modified-lar,rate-limit,ratespread-calculator">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-Xlint" />
+        <parameter value="-Ypartial-unification" />
+      </parameters>
+    </profile>
+  </component>
+</project>

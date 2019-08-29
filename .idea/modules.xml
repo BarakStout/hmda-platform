@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/census-api.iml" filepath="$PROJECT_DIR$/.idea/modules/census-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/check-digit.iml" filepath="$PROJECT_DIR$/.idea/modules/check-digit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data-browser.iml" filepath="$PROJECT_DIR$/.idea/modules/data-browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-analytics.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-analytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-platform.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-protocol.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-regulator.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-regulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-reporting.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-reporting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-root.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-root-build.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-root-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hmda-spark-reporting.iml" filepath="$PROJECT_DIR$/.idea/modules/hmda-spark-reporting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/institutions-api.iml" filepath="$PROJECT_DIR$/.idea/modules/institutions-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/irs-publisher.iml" filepath="$PROJECT_DIR$/.idea/modules/irs-publisher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modified-lar.iml" filepath="$PROJECT_DIR$/.idea/modules/modified-lar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rate-limit.iml" filepath="$PROJECT_DIR$/.idea/modules/rate-limit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ratespread-calculator.iml" filepath="$PROJECT_DIR$/.idea/modules/ratespread-calculator.iml" />
+    </modules>
+  </component>
+</project>
