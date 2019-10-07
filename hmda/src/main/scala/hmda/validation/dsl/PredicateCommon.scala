@@ -1,5 +1,7 @@
 package hmda.validation.dsl
 
+import org.checkerframework.checker.units.qual.A
+
 import scala.util.Try
 
 object PredicateCommon {
@@ -46,6 +48,13 @@ object PredicateCommon {
     case _ =>
       throw new NotImplementedError(
         "'numeric' doesn't handle non-number/string values yet")
+  }
+
+  def alphaNumeric[A]: Predicate[A] = (_: A) match {
+    case s: String => Try(s.matches("^[a-zA-Z0-9]*$")).isSuccess
+    case _ =>
+      throw new NotImplementedError(
+        "'alphanumeric' doesn't handle non-number/string values yet")
   }
 
   def empty[A]: Predicate[A] = (_: A) match {
