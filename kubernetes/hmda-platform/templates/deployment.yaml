@@ -22,8 +22,7 @@ spec:
         release: {{ .Release.Name }}
         actorSystemName: {{ .Values.hmda.actorSystemName }}
     spec:
-      affinity:
-{{ toYaml .Values.affinity | indent 8 }}
+      affinity: {}
       volumes:
         - name: tz-config
           hostPath:
