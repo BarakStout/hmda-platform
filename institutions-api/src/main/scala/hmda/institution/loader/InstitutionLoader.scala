@@ -4,9 +4,9 @@ import java.io.File
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
-import akka.http.scaladsl.model.{ ContentTypes, HttpMethods, HttpRequest }
+import akka.http.scaladsl.model.{ContentTypes, HttpMethods, HttpRequest, StatusCodes}
 import akka.stream.ActorMaterializer
-import akka.stream.scaladsl.{ FileIO, Sink }
+import akka.stream.scaladsl.{FileIO, Sink}
 import akka.util.ByteString
 import com.typesafe.config.ConfigFactory
 import hmda.api.http.FlowUtils
@@ -65,6 +65,13 @@ object InstitutionLoader extends App with FlowUtils {
     .mapAsync(parallelism) { req =>
       Http().singleRequest(req)
     }
+    .map( res => {
+      res.status match {
+        case StatusCodes.BadRequest => log.info(res.toString())
+        case _ => log.info("else... ")
+      }
+    }
+    )
     .runWith(Sink.last)
     .onComplete(_ => system.terminate())
 
