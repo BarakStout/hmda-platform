@@ -11,7 +11,7 @@
 `docker push  <docker-host>/<image-name>:<image-tag>`
 
 
-* From the kubernetes/newman directory create a K8 cron job that references this image 
+* From the kubernetes/newman directory create a K8 cron job that references this image
 
 `kubectl config use-context <dev-context>`
 
@@ -31,3 +31,5 @@ helm install  --namespace=newman  \
 
 ### delete cronjob
  `kubectl delete -n newman cronjob --all`
+
+### travis
