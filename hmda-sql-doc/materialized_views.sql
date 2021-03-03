@@ -4,7 +4,8 @@ CREATE materialized VIEW hmda_user.exemptions_2018 tablespace pg_default
 AS
 SELECT
     ts.agency,
-    COUNT(DISTINCT lar.lei)
+    COUNT(DISTINCT lar.lei),
+    now()
 FROM
     transmittalsheet2018 ts
     JOIN loanapplicationregister2018 lar ON lar.lei::text = ts.lei::text
@@ -54,7 +55,8 @@ CREATE materialized VIEW hmda_user.exemptions_2019 tablespace pg_default
 AS
 SELECT
     ts.agency,
-    COUNT(DISTINCT lar.lei)
+    COUNT(DISTINCT lar.lei),
+    now()
 FROM
     transmittalsheet2019 ts
     JOIN loanapplicationregister2019 lar ON lar.lei::text = ts.lei::text
@@ -104,7 +106,8 @@ CREATE materialized VIEW hmda_user.exemptions_2020 tablespace pg_default
 AS
 SELECT
     ts.agency,
-    COUNT(DISTINCT lar.lei)
+    COUNT(DISTINCT lar.lei),
+    now()
 FROM
     transmittalsheet2020 ts
     JOIN loanapplicationregister2020 lar ON lar.lei::text = ts.lei::text
@@ -155,7 +158,8 @@ CREATE materialized VIEW hmda_user.open_end_credit_filers_by_agency_2018 tablesp
 AS
 SELECT
     agency,
-    ts.lei
+    ts.lei,
+    now()
 FROM
     transmittalsheet2018 AS ts
 WHERE
@@ -180,7 +184,8 @@ CREATE materialized VIEW hmda_user.open_end_credit_filers_by_agency_2019 tablesp
 AS
 SELECT
     agency,
-    ts.lei
+    ts.lei,
+    now()
 FROM
     transmittalsheet2019 AS ts
 WHERE
@@ -206,7 +211,8 @@ CREATE materialized VIEW hmda_user.lar_count_using_exemption_by_agency_2018 tabl
 AS
 SELECT
     ts.agency,
-    count(*)
+    count(*),
+    now()
 FROM
     transmittalsheet2018 ts
     JOIN loanapplicationregister2018 lar ON lar.lei::text = ts.lei::text
@@ -256,7 +262,8 @@ CREATE materialized VIEW hmda_user.lar_count_using_exemption_by_agency_2019 tabl
 AS
 SELECT
     ts.agency,
-    count(*)
+    count(*),
+    now()
 FROM
     transmittalsheet2019 ts
     JOIN loanapplicationregister2019 lar ON lar.lei::text = ts.lei::text
@@ -306,7 +313,8 @@ CREATE materialized VIEW hmda_user.lar_count_using_exemption_by_agency_2020 tabl
 AS
 SELECT
     ts.agency,
-    count(*)
+    count(*),
+    now()
 FROM
     transmittalsheet2020 ts
     JOIN loanapplicationregister2020 lar ON lar.lei::text = ts.lei::text
@@ -357,7 +365,8 @@ CREATE materialized VIEW hmda_user.open_end_credit_lar_count_by_agency_2018 tabl
 AS
 SELECT
     ts.agency,
-    ts.lei
+    ts.lei,
+    now()
 FROM
     transmittalsheet2018 AS ts
     LEFT JOIN loanapplicationregister2018 AS lar ON Upper(ts.lei) = Upper(lar.lei)
@@ -368,7 +377,8 @@ CREATE materialized VIEW hmda_user.open_end_credit_lar_count_by_agency_2019 tabl
 AS
 SELECT
     ts.agency,
-    ts.lei
+    ts.lei,
+    now()
 FROM
     transmittalsheet2019 AS ts
     LEFT JOIN loanapplicationregister2019 AS lar ON Upper(ts.lei) = Upper(lar.lei)
